@@ -293,7 +293,7 @@ if ( ! function_exists( 'nilmini_comment' ) ) :
 function nilmini_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
-		case '' :
+		case 'comment' :
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 		<article id="comment-<?php comment_ID(); ?>" class="comment">
